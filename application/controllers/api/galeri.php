@@ -45,7 +45,7 @@ class Galeri extends RestController
                 'messages' => 'Provide Id'
             ], RestController::HTTP_BAD_REQUEST);
         } else {
-            if ($this->Modelberita->deleteGaleri($id) > 0) {
+            if ($this->ModelGaleri->deleteGaleri($id) > 0) {
                 $this->response([
                     'status' => true,
                     'id' => $id,
